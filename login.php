@@ -32,7 +32,6 @@
 			}else{
 				session_start();
 				$_SESSION['user']=$row;
-				
 				header("Location:index1.html");
 				
 				}

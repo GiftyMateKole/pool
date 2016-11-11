@@ -16,7 +16,7 @@ function reg(){
 				var email = document.getElementsByName("email")[0].value;
 				
 				
-				var ajaxPageUrl="pageAjax.php?cmd=1&firstname="+firstname+"&lastname="+lastname+"&user="+user+
+				var ajaxPageUrl="http://52.89.116.249/~gifty.mate-kole/carpool/pageAjax.php?cmd=1&firstname="+firstname+"&lastname="+lastname+"&user="+user+
 				"&password="+password+"&phone="+phone+"&email="+email;
 				$.ajax(ajaxPageUrl,
 				{async:true,complete:regComplete}	
