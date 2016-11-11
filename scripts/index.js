@@ -23,6 +23,28 @@ function reg(){
 				);
 			}
 			
+function logComplete(xhr,status){
+				if(status!="success"){
+					divStatus.innerHTML="error while adding user";
+					return;
+				}
+				divStatus.innerHTML=xhr.responseText;
+			}
+			
+			
+function login(){
+				var username = document.getElementsByName("username")[0].value;
+				var pword = document.getElementsByName("pword")[0].value;
+				
+				
+				
+				var ajaxPageUrl="login.php?username="+username+"&pword="+pword;
+				$.ajax(ajaxPageUrl,
+				{async:true,complete:logComplete}	
+				);
+			}
+			
+			
 
 
 			

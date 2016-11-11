@@ -64,6 +64,8 @@ session_start();
 			body{
 			font-family: "Comic Sans MS", cursive, sans-serif;
 			}
+	
+#map-canvas { height: 100% }
 		</style>
 
 	</head>
@@ -96,13 +98,13 @@ session_start();
 			
 			<div data-role="content" style="text-shadow: none">
 			<center><h3 style="margin-top:25%"> Login</h3></center>
-				<form action="login.php" method="post">
+				
 				<span class="glyphicon glyphicon-user"></span>
 				<input type="text" name="username" placeholder="Username..."><br>
 				<span class="glyphicon glyphicon-lock"></span>
 				<input type="password" name="pword" placeholder="Password..."><br>
-				<button onclick=login.php>Login</button>
-				</form>
+				<button onclick="login()">Login</button>
+				
 
 			</div><!-- /content -->
 		</div>
@@ -384,6 +386,7 @@ var mapOptions = {zoom: 4,center: myLatlng}
 var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 var marker = new google.maps.Marker({position: myLatlng,map: map});
 }
+
 function onError(error) {
 alert('code: ' + error.code + '\n' +
 'message: ' + error.message + '\n');
