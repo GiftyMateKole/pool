@@ -38,7 +38,7 @@ function login(){
 				
 				
 				
-				var ajaxPageUrl="http://52.89.116.249/~gifty.mate-kole/carpool/login.php?username="+username+"&pword="+pword;
+				var ajaxPageUrl='http://52.89.116.249/~gifty.mate-kole/carpool/login.php?username='+username+"&pword="+pword;
 				
 				$.ajax(ajaxPageUrl,
 				{async:true,complete:logComplete}	
