@@ -32,7 +32,7 @@
 			}else{
 				session_start();
 				$_SESSION['user']=$row;
-				header("Location:index1.html");
+				header("Location:http://52.89.116.249/~gifty.mate-kole/carpool/index1.html");
 				
 				}
 				

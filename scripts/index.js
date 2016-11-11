@@ -21,6 +21,8 @@ function reg(){
 				$.ajax(ajaxPageUrl,
 				{async:true,complete:regComplete}	
 				);
+				
+				alert("Registered");
 			}
 			
 function logComplete(xhr,status){
@@ -63,7 +65,7 @@ function showUser(str) {
                 document.getElementById("txtHint").innerHTML = this.responseText;
             }
         };
-        xmlhttp.open("GET","getpool.php?q="+str,true);
+        xmlhttp.open("GET","http://52.89.116.249/~gifty.mate-kole/carpool/getpool.php?q="+str,true);
         xmlhttp.send();
     }
 }
@@ -81,7 +83,7 @@ function showReport(str) {
                 document.getElementById("txt").innerHTML = this.responseText;
             }
         };
-        xmlhttp.open("GET","getReport.php?q="+str,true);
+        xmlhttp.open("GET","http://52.89.116.249/~gifty.mate-kole/carpool/getReport.php?q="+str,true);
         xmlhttp.send();
     }
 }
@@ -99,7 +101,7 @@ function showR(str) {
                 document.getElementById("tx").innerHTML = this.responseText;
             }
         };
-        xmlhttp.open("GET","getReport1.php?q="+str,true);
+        xmlhttp.open("GET","http://52.89.116.249/~gifty.mate-kole/carpool/getReport1.php?q="+str,true);
         xmlhttp.send();
     }
 }
@@ -117,7 +119,7 @@ function showSMS(str) {
                 document.getElementById("txtH").innerHTML = this.responseText;
             }
         };
-        xmlhttp.open("GET","sms.php?q="+str,true);
+        xmlhttp.open("GET","http://52.89.116.249/~gifty.mate-kole/carpool/sms.php?q="+str,true);
         xmlhttp.send();
     }
 }
